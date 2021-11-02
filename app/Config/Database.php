@@ -14,7 +14,7 @@ class Database
             self::$pdo = new \PDO(
                 $config['database'][$env]['url'],
                 $config['database'][$env]['username'],
-                $config['database'][$env]['passwor']
+                $config['database'][$env]['password']
             );
         }
 
