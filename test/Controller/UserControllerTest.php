@@ -1,22 +1,10 @@
 <?php
 
-namespace ProgrammerZamanNow\Belajar\PHP\MVC\App {
 
-    function header(string $value){
-        echo $value;
-    }
-
-}
-
-namespace ProgrammerZamanNow\Belajar\PHP\MVC\Service {
-
-    function setcookie(string $name, string $value){
-        echo "$name: $value";
-    }
-
-}
 
 namespace ProgrammerZamanNow\Belajar\PHP\MVC\Controller {
+
+    require_once __DIR__ . '/../Helper/helper.php';
 
     use PHPUnit\Framework\TestCase;
     use ProgrammerZamanNow\Belajar\PHP\MVC\Config\Database;

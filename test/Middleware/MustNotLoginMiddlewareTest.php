@@ -1,14 +1,9 @@
 <?php
 
-namespace ProgrammerZamanNow\Belajar\PHP\MVC\App {
-
-    function header(string $value){
-        echo $value;
-    }
-
-}
-
 namespace ProgrammerZamanNow\Belajar\PHP\MVC\Middleware {
+
+    require_once __DIR__ . '/../Helper/helper.php';
+
     use PHPUnit\Framework\TestCase;
     use ProgrammerZamanNow\Belajar\PHP\MVC\Config\Database;
     use ProgrammerZamanNow\Belajar\PHP\MVC\Domain\Session;
