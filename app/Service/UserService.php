@@ -85,7 +85,7 @@ class UserService
         }
     }
 
-    private function updateProfile(UserProfileUpdateRequest $request): UserProfileUpdateResponse
+    public function updateProfile(UserProfileUpdateRequest $request): UserProfileUpdateResponse
     {
         $this->validateUserProfileUpdateRequest($request);
 
@@ -98,7 +98,7 @@ class UserService
             }
 
             $user->name = $request->name;
-            $this->userRepository->save($user);
+            $this->userRepository->update($user);
 
             Database::commitTransaction();
 
